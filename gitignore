@@ -1,0 +1,44 @@
+
+## Ignore arquivos de build e pasta bin/obj
+bin/
+obj/
+
+## Logs
+*.log
+
+## Arquivos do usuário do Visual Studio
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Pasta de dependências do NuGet
+**/packages/*
+!**/packages/build/
+!**/packages/repositories.config
+
+## Diretórios de publicação
+publish/
+out/
+
+## Configurações locais e secrets
+appsettings.Development.json
+secrets.json
+
+## Arquivos do Rider e VSCode
+.idea/
+.vscode/
+
+## Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+## Arquivos de lock
+project.lock.json
+project.fragment.lock.json
+
+## Testes e cobertura
+TestResults/
+*.coverage
+*.coveragexml
+*.codecoverage
