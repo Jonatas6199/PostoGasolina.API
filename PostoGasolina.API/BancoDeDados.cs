@@ -23,6 +23,12 @@
                 CodigoDoProduto = 3,
                 Descricao = "Diesel",
                 PrecoLitro = 6.99
+            },
+            new Combustivel
+            {
+                CodigoDoProduto=4,
+                Descricao = "Gasolina Aditivada",
+                PrecoLitro = 6.49
             }
         };
 

@@ -14,8 +14,32 @@ namespace PostoGasolina.API.Controllers
             return StatusCode(200, BancoDeDados.Combustiveis);
         }
 
+        //Método HttpGet com um parâmetro obrigatório na assinatura do endpoint
+        [HttpGet("CombustivelEspecificoForeach/{codigoCombustivel}")]
+        public IActionResult CombustivelEspecificoForeach(int codigoCombustivel)
+        {
+            foreach (Combustivel combustivel in BancoDeDados.Combustiveis)
+            {
+                if (combustivel.CodigoDoProduto == codigoCombustivel)
+                {
+                    return StatusCode(200, combustivel);
+                }
+            }
+            return StatusCode(400, "Nenhum produto com esse código informado");
+        }
+
+        [HttpGet("CombustivelEspecificoLinq")]
+        public IActionResult CombustivelEspecificoLinq(int codigoCombustivel)
+        {
+            Combustivel? combustivel = BancoDeDados.Combustiveis.Find(c=> c.CodigoDoProduto.Equals(codigoCombustivel));
+            if(combustivel == null)
+                return StatusCode(400, "Nenhum produto com esse código informado");
+            else
+                return StatusCode(200,combustivel);
+        }
+
         [HttpPost("ComprarCombustivel")]
-        public IActionResult ComprarCombustivel (int codigoDeCombustivel, double litros)
+        public IActionResult ComprarCombustivel(int codigoDeCombustivel, double litros)
         {
             //Guardar o combustivel escolhido
             Combustivel? combustivelEscolhido = null;
@@ -23,7 +47,7 @@ namespace PostoGasolina.API.Controllers
             //Para cada combustivel dentro da lista de combustiveis
             foreach (Combustivel combustivel in BancoDeDados.Combustiveis)
             {
-                if(combustivel.CodigoDoProduto == codigoDeCombustivel)
+                if (combustivel.CodigoDoProduto == codigoDeCombustivel)
                 {
                     //variavel de nome combustivel 
                     //é a variável que temos no banco de dados
@@ -37,9 +61,9 @@ namespace PostoGasolina.API.Controllers
             BancoDeDados.Combustiveis.Find(c => c.CodigoDoProduto == codigoDeCombustivel);
             */
             if (combustivelEscolhido == null)
-                return StatusCode(400,"Nenhum código associado foi encontrado");
+                return StatusCode(400, "Nenhum código associado foi encontrado");
 
-            
+
             Compra compra = new Compra();
             compra.Combustivel = combustivelEscolhido;
             compra.DataCompra = DateTime.Now;
