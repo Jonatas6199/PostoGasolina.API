@@ -1,0 +1,160 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jonatas.jsilva4\\Documents\\PostoGasolina.API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D14F9A2B-88FF-4072-9958-557D5D73892A}|PostoGasolina.API\\PostoGasolina.API.csproj|c:\\users\\jonatas.jsilva4\\documents\\postogasolina.api\\postogasolina.api\\postogasolina.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D14F9A2B-88FF-4072-9958-557D5D73892A}|PostoGasolina.API\\PostoGasolina.API.csproj|solutionrelative:postogasolina.api\\postogasolina.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14F9A2B-88FF-4072-9958-557D5D73892A}|PostoGasolina.API\\PostoGasolina.API.csproj|c:\\users\\jonatas.jsilva4\\documents\\postogasolina.api\\postogasolina.api\\controllers\\postogasolinacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D14F9A2B-88FF-4072-9958-557D5D73892A}|PostoGasolina.API\\PostoGasolina.API.csproj|solutionrelative:postogasolina.api\\controllers\\postogasolinacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14F9A2B-88FF-4072-9958-557D5D73892A}|PostoGasolina.API\\PostoGasolina.API.csproj|c:\\users\\jonatas.jsilva4\\documents\\postogasolina.api\\postogasolina.api\\bancodedados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D14F9A2B-88FF-4072-9958-557D5D73892A}|PostoGasolina.API\\PostoGasolina.API.csproj|solutionrelative:postogasolina.api\\bancodedados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14F9A2B-88FF-4072-9958-557D5D73892A}|PostoGasolina.API\\PostoGasolina.API.csproj|c:\\users\\jonatas.jsilva4\\documents\\postogasolina.api\\postogasolina.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D14F9A2B-88FF-4072-9958-557D5D73892A}|PostoGasolina.API\\PostoGasolina.API.csproj|solutionrelative:postogasolina.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14F9A2B-88FF-4072-9958-557D5D73892A}|PostoGasolina.API\\PostoGasolina.API.csproj|c:\\users\\jonatas.jsilva4\\documents\\postogasolina.api\\postogasolina.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D14F9A2B-88FF-4072-9958-557D5D73892A}|PostoGasolina.API\\PostoGasolina.API.csproj|solutionrelative:postogasolina.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14F9A2B-88FF-4072-9958-557D5D73892A}|PostoGasolina.API\\PostoGasolina.API.csproj|c:\\users\\jonatas.jsilva4\\documents\\postogasolina.api\\postogasolina.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D14F9A2B-88FF-4072-9958-557D5D73892A}|PostoGasolina.API\\PostoGasolina.API.csproj|solutionrelative:postogasolina.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14F9A2B-88FF-4072-9958-557D5D73892A}|PostoGasolina.API\\PostoGasolina.API.csproj|c:\\users\\jonatas.jsilva4\\documents\\postogasolina.api\\postogasolina.api\\combustivel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D14F9A2B-88FF-4072-9958-557D5D73892A}|PostoGasolina.API\\PostoGasolina.API.csproj|solutionrelative:postogasolina.api\\combustivel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14F9A2B-88FF-4072-9958-557D5D73892A}|PostoGasolina.API\\PostoGasolina.API.csproj|c:\\users\\jonatas.jsilva4\\documents\\postogasolina.api\\postogasolina.api\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D14F9A2B-88FF-4072-9958-557D5D73892A}|PostoGasolina.API\\PostoGasolina.API.csproj|solutionrelative:postogasolina.api\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d84ee353-0bef-5a41-a649-8f89aca5d84d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\jonatas.jsilva4\\Documents\\PostoGasolina.API\\PostoGasolina.API\\Program.cs",
+              "RelativeDocumentMoniker": "PostoGasolina.API\\Program.cs",
+              "ToolTip": "C:\\Users\\jonatas.jsilva4\\Documents\\PostoGasolina.API\\PostoGasolina.API\\Program.cs",
+              "RelativeToolTip": "PostoGasolina.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T22:25:58.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\jonatas.jsilva4\\Documents\\PostoGasolina.API\\PostoGasolina.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "PostoGasolina.API\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\jonatas.jsilva4\\Documents\\PostoGasolina.API\\PostoGasolina.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "PostoGasolina.API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-07T22:25:16.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PostoGasolinaController.cs",
+              "DocumentMoniker": "C:\\Users\\jonatas.jsilva4\\Documents\\PostoGasolina.API\\PostoGasolina.API\\Controllers\\PostoGasolinaController.cs",
+              "RelativeDocumentMoniker": "PostoGasolina.API\\Controllers\\PostoGasolinaController.cs",
+              "ToolTip": "C:\\Users\\jonatas.jsilva4\\Documents\\PostoGasolina.API\\PostoGasolina.API\\Controllers\\PostoGasolinaController.cs",
+              "RelativeToolTip": "PostoGasolina.API\\Controllers\\PostoGasolinaController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwCsAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T01:05:19.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\jonatas.jsilva4\\Documents\\PostoGasolina.API\\PostoGasolina.API\\appsettings.json",
+              "RelativeDocumentMoniker": "PostoGasolina.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\jonatas.jsilva4\\Documents\\PostoGasolina.API\\PostoGasolina.API\\appsettings.json",
+              "RelativeToolTip": "PostoGasolina.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-07T23:00:25.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PostoGasolina.API.csproj",
+              "DocumentMoniker": "C:\\Users\\jonatas.jsilva4\\Documents\\PostoGasolina.API\\PostoGasolina.API\\PostoGasolina.API.csproj",
+              "RelativeDocumentMoniker": "PostoGasolina.API\\PostoGasolina.API.csproj",
+              "ToolTip": "C:\\Users\\jonatas.jsilva4\\Documents\\PostoGasolina.API\\PostoGasolina.API\\PostoGasolina.API.csproj",
+              "RelativeToolTip": "PostoGasolina.API\\PostoGasolina.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-07T00:31:33.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BancoDeDados.cs",
+              "DocumentMoniker": "C:\\Users\\jonatas.jsilva4\\Documents\\PostoGasolina.API\\PostoGasolina.API\\BancoDeDados.cs",
+              "RelativeDocumentMoniker": "PostoGasolina.API\\BancoDeDados.cs",
+              "ToolTip": "C:\\Users\\jonatas.jsilva4\\Documents\\PostoGasolina.API\\PostoGasolina.API\\BancoDeDados.cs",
+              "RelativeToolTip": "PostoGasolina.API\\BancoDeDados.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAApwB0AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T00:42:50.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Compra.cs",
+              "DocumentMoniker": "C:\\Users\\jonatas.jsilva4\\Documents\\PostoGasolina.API\\PostoGasolina.API\\Compra.cs",
+              "RelativeDocumentMoniker": "PostoGasolina.API\\Compra.cs",
+              "ToolTip": "C:\\Users\\jonatas.jsilva4\\Documents\\PostoGasolina.API\\PostoGasolina.API\\Compra.cs",
+              "RelativeToolTip": "PostoGasolina.API\\Compra.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T00:38:21.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Combustivel.cs",
+              "DocumentMoniker": "C:\\Users\\jonatas.jsilva4\\Documents\\PostoGasolina.API\\PostoGasolina.API\\Combustivel.cs",
+              "RelativeDocumentMoniker": "PostoGasolina.API\\Combustivel.cs",
+              "ToolTip": "C:\\Users\\jonatas.jsilva4\\Documents\\PostoGasolina.API\\PostoGasolina.API\\Combustivel.cs",
+              "RelativeToolTip": "PostoGasolina.API\\Combustivel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T00:31:49.852Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "cYgTJiTFE5oTSZERLkkHmBovvY2nVWoi08RFwY3U8bI=",
+  "Source": "PostoGasolina.API",
+  "BasePath": "_content/PostoGasolina.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

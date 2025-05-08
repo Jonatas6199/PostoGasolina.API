@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostoGasolina.API", "PostoGasolina.API\PostoGasolina.API.csproj", "{D14F9A2B-88FF-4072-9958-557D5D73892A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D14F9A2B-88FF-4072-9958-557D5D73892A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D14F9A2B-88FF-4072-9958-557D5D73892A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D14F9A2B-88FF-4072-9958-557D5D73892A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D14F9A2B-88FF-4072-9958-557D5D73892A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2AFAEA76-C4D6-4318-B088-ED201DB6BBB3}
+	EndGlobalSection
+EndGlobal
