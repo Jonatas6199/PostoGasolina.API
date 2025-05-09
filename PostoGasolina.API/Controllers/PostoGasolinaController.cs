@@ -11,31 +11,29 @@ namespace PostoGasolina.API.Controllers
         public IActionResult ListaCombustiveis()
         {
             //Devolve um status code de sucesso juntamente com a lista de combustiveis
-            return StatusCode(200, BancoDeDados.Combustiveis);
+            return StatusCode(200, BancoDeDados.ListarCombustiveis());
         }
 
         //Método HttpGet com um parâmetro obrigatório na assinatura do endpoint
-        [HttpGet("CombustivelEspecificoForeach/{codigoCombustivel}")]
-        public IActionResult CombustivelEspecificoForeach(int codigoCombustivel)
+        [HttpGet("CombustivelEspecifico/{codigoCombustivel}")]
+        public IActionResult CombustivelEspecifico(int codigoCombustivel)
         {
-            foreach (Combustivel combustivel in BancoDeDados.Combustiveis)
-            {
-                if (combustivel.CodigoDoProduto == codigoCombustivel)
-                {
-                    return StatusCode(200, combustivel);
-                }
-            }
-            return StatusCode(400, "Nenhum produto com esse código informado");
+            //Busca um combustivel no banco de dados e o atribui a variavel combustivelEncontrado
+            Combustivel? combustivelEncontrado = BancoDeDados.BuscaCombustivelEspecifico(codigoCombustivel);
+            //Verifica se foi de fato encontrado, se não foi, ele vai ser nulo
+            if (combustivelEncontrado == null)
+                //Se não encontrou, devolve um código de erro na requisição
+                return StatusCode(400, "Nenhum combustivel com esse código foi encontrado");
+            
+            //Devolve um código de sucesso junto com o combustivel encontrado
+            return StatusCode(200, combustivelEncontrado);
         }
 
-        [HttpGet("CombustivelEspecificoLinq")]
-        public IActionResult CombustivelEspecificoLinq(int codigoCombustivel)
+        [HttpPutAttribute("AtualizarPreco")]
+        public IActionResult AtualizarPreco(int codigoProduto, double novoPreco)
         {
-            Combustivel? combustivel = BancoDeDados.Combustiveis.Find(c=> c.CodigoDoProduto.Equals(codigoCombustivel));
-            if(combustivel == null)
-                return StatusCode(400, "Nenhum produto com esse código informado");
-            else
-                return StatusCode(200,combustivel);
+            BancoDeDados.AtualizarPreco(codigoProduto, novoPreco);
+            return StatusCode(200);
         }
 
         [HttpPost("ComprarCombustivel")]
