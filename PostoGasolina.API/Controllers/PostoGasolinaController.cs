@@ -29,53 +29,36 @@ namespace PostoGasolina.API.Controllers
             return StatusCode(200, combustivelEncontrado);
         }
 
-        [HttpPutAttribute("AtualizarPreco")]
+        [HttpPut("AtualizarPreco")]
         public IActionResult AtualizarPreco(int codigoProduto, double novoPreco)
         {
+            if (BancoDeDados.BuscaCombustivelEspecifico(codigoProduto) == null)
+                return StatusCode(400, "Nenhum código de produto encontrado");
+           
             BancoDeDados.AtualizarPreco(codigoProduto, novoPreco);
-            return StatusCode(200);
+            return StatusCode(200,"Preço atualizado!");
         }
 
         [HttpPost("ComprarCombustivel")]
         public IActionResult ComprarCombustivel(int codigoDeCombustivel, double litros)
         {
-            //Guardar o combustivel escolhido
-            Combustivel? combustivelEscolhido = null;
-
-            //Para cada combustivel dentro da lista de combustiveis
-            foreach (Combustivel combustivel in BancoDeDados.Combustiveis)
-            {
-                if (combustivel.CodigoDoProduto == codigoDeCombustivel)
-                {
-                    //variavel de nome combustivel 
-                    //é a variável que temos no banco de dados
-                    //estou copiando o valor dela pra variável combustivelEscolhido
-                    combustivelEscolhido = combustivel;
-                    break;
-                }
-            }
-            /* Outra forma de fazer a busca
-            combustivelEscolhido = 
-            BancoDeDados.Combustiveis.Find(c => c.CodigoDoProduto == codigoDeCombustivel);
-            */
-            if (combustivelEscolhido == null)
-                return StatusCode(400, "Nenhum código associado foi encontrado");
-
+            Combustivel? combustivel = BancoDeDados.BuscaCombustivelEspecifico(codigoDeCombustivel);
+            if (combustivel == null)
+                return BadRequest("Nenhum combustível encontrado");
 
             Compra compra = new Compra();
-            compra.Combustivel = combustivelEscolhido;
+            compra.ValorTotal = combustivel.PrecoLitro * litros;
+            compra.Combustivel = combustivel;
             compra.DataCompra = DateTime.Now;
-            compra.ValorTotal = combustivelEscolhido.PrecoLitro * litros;
 
-            BancoDeDados.Compras.Add(compra);
-
-            return StatusCode(200, compra);
+            BancoDeDados.RealizarCompra(codigoDeCombustivel, compra.ValorTotal);
+            return Ok(compra);
         }
 
         [HttpGet("Extrato")]
         public IActionResult Extrato()
         {
-            return StatusCode(200, BancoDeDados.Compras);
+            return StatusCode(200, BancoDeDados.ListarCompras());
         }
 
     }
