@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using Org.BouncyCastle.Tls;
 
 namespace PostoGasolina.API
 {
@@ -129,6 +130,55 @@ namespace PostoGasolina.API
 
             //Estou executando o comando 
             command.ExecuteNonQuery();
+        }
+
+        public static void RealizarCompra(int codigoCombustivel, double valorCompra)
+        {
+            MySqlConnection connection = new MySqlConnection(stringDeConexao);
+            connection.Open();
+
+            string query = "insert into Compra (Valor,DataCompra,CodigoCombustivel) " +
+                "values(@valorCompra, @dataCompra, @codigoProduto)";
+            MySqlCommand command = new MySqlCommand(query,connection);
+            command.Parameters.AddWithValue("@valorCompra", valorCompra);
+            command.Parameters.AddWithValue("@dataCompra", DateTime.Now);
+            command.Parameters.AddWithValue("@codigoProduto", codigoCombustivel);
+
+            command.ExecuteNonQuery();
+        }
+
+        public static List<Compra> ListarCompras()
+        {
+            MySqlConnection connection = new MySqlConnection(stringDeConexao);
+            connection.Open();
+
+            string query = "SELECT Compra.Valor, Compra.DataCompra, " +
+                "Combustivel.IdCodigoProduto," +
+                " Combustivel.Descricao " +
+                "FROM Compra INNER JOIN Combustivel ON" +
+                " Compra.CodigoCombustivel = Combustivel.IdCodigoProduto "+
+                "order by Compra.DataCompra";
+
+            MySqlCommand command = new MySqlCommand(query, connection);
+
+            MySqlDataReader reader = command.ExecuteReader();
+
+            List<Compra> compras = new List<Compra>();  
+            while (reader.Read()) 
+            {
+                Combustivel combustivel = new Combustivel();
+                combustivel.CodigoDoProduto = reader.GetInt32("IdCodigoProduto");
+                combustivel.Descricao = reader.GetString("Descricao");
+
+                Compra compra = new Compra();
+                compra.DataCompra = reader.GetDateTime("DataCompra");
+                compra.ValorTotal = reader.GetDouble("Valor");
+                compra.Combustivel = combustivel;
+
+                compras.Add(compra);
+            }
+            return compras;
+
         }
     }
 }
